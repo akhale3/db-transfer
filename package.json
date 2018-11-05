@@ -1,0 +1,24 @@
+{
+  "name": "db-transfer",
+  "version": "1.0.0",
+  "description": "A collection of utility scripts for moving database table data between relational databases",
+  "main": "index.js",
+  "scripts": {
+    "compare": "node -pe \"const compare = require('.').compare; compare();\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akhale3/data-transfer.git"
+  },
+  "author": "Anish Khale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akhale3/data-transfer/issues"
+  },
+  "homepage": "https://github.com/akhale3/data-transfer#readme",
+  "dependencies": {
+    "csvtojson": "^2.0.8",
+    "json-table": "^0.1.3"
+  }
+}
