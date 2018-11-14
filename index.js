@@ -56,6 +56,11 @@ const compare = () => {
     const outliers = [];
 
     Object.keys(leftMap).forEach(leftId => {
+      // Filter canceled cards from left
+      if (leftMap[leftId].indexOf('cancel_') !== -1) {
+        return;
+      }
+
       if (!rightMap[leftId]) { // id not present in right
         outliers.push({
           id: leftId,
